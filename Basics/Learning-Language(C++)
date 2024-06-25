@@ -33,7 +33,7 @@
 -----------------------------------------------------------------------------------------
                                 string**
                              -------------
-find()	  Find a substring in the string.
+find()	    Find a substring in the string.
 rfind()  	Find the last occurrence of a substring in the string. 
 append()	Append to the string.
 insert()	Insert into the string.
