@@ -28,3 +28,16 @@
 # 10. Structures
   -> link: https://youkn0wwho.academy/topic-list/structures
 
+
+
+-----------------------------------------------------------------------------------------
+                                string**
+                             -------------
+find()	Find a substring in the string.
+rfind()	Find the last occurrence of a substring in the string. 
+append()	Append to the string.
+insert()	Insert into the string.
+erase()	Erase characters from the string.
+replace()	Replace portions of the string.
+compare()	Compare two strings.
+-----------------------------------------------------------------------------------------
