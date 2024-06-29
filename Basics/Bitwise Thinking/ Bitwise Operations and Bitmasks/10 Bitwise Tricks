@@ -21,7 +21,7 @@
 -------------------------------------------------------
 **05. Find out modulo of (N % 2^k)
 
-    cout<< N&((1<<k)-1) <<endl;
+   cout<< N&((1<<k)-1) <<endl;
 
     (64*2^k) (32*2^k)      ! 
     exp:  `1 0 `1 0 1 1 0  1  0 1 0 0 0
@@ -30,6 +30,39 @@
            0 0  0 0 0 0 0  0  0 1 0 0 0   ~> Reminder
 
 ----------------------------------------------------------
+**06. Swapping two Number X and Y without temp variable
+    ~>    x = x^y  ____ { x=x^y , y=y } 
+          y = x^y  ____ { y=x^y^y , x=x^y } -> y=x;
+          x = x^y  ____ { x=x^y^x , y=x }  -> x=y;
+-------------------------------------------------------------
+**07. Property: No. of set bits in A = X
+                No. of set bits in B = Y
+        
+    ~>    `Number of set bits in (A^B) is Even if X+Y is Even
+          `Number of set bits in (A^B) is Odd if X+Y is Odd
+                        1100110001
+                        0100110010        Z = X+Y-2*x
+                      __1x__xx__11__        = 3
+
+                X+Y==9 <~[odd]~> Z==3
+--------------------------------------------------------------------
+**08. if X==A then assign X=B and if X==B then assign X=A
+                            ::>  x=a^a^b;  x=a^b^b
+    ~>  X = A^B^X          
+---------------------------------------------------------------------
+**09. Two useful identities
+    ~>  A+B = (A^B)+2(A&B)
+    ~>  A+B = (A|B)+(A&B)
+---------------------------------------------------------
+**10. Find out the number of set bits in a Number X
+    ~>   __builtin_popcount(X)        ->  integer
+         __builtin_popcountll(X)      ->  long long
+---------------------------------------------------------
+
+~> There are also __builtin_clz(X) and __builtin_ctz(X) (and their long long versions)
+     for counting the number of leading or trailing zeros in a positive number.
+
+
 
 
 
