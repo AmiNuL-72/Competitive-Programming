@@ -1,1 +1,37 @@
+---------------------------------------------
+**01. Check if a number is EVEN or ODD
+    ~>  (x&1)? odd:even;
+---------------------------------------------
+**02. Check if a number is power of 2
+    ~>  x&(x-1) ? no:yes;
+    exp: x=10, x-1=9;
+        1010 & 1001 -> 1000 != 0
+    exp: x=8, x-1=7;
+        1000 & 0111 -> 0000 == 0 
+------------------------------------------------
+**03. Playing with the k-th bit::[(1<<k)=2^k]
+    i) check if the k-th bit is set_  n&(1<<k) ? yes:no;
+    ii) Toggle the k-th bit_   n^(1<<k)
+    iii) set the k-th bit_   n|(1<<k)
+    iv) unset the k-th bit_  n&~(1<<k)
+------------------------------------------------------
+**04. Multiply or Divide a number by 2^k
+    ~> Multiplication:   (x<<k) left-shift
+    ~> Division:         (x>>k) right-shift
+-------------------------------------------------------
+**05. Find out modulo of (N % 2^k)
+
+    cout<< N&((1<<k)-1) <<endl;
+
+    (64*2^k) (32*2^k)      ! 
+    exp:  `1 0 `1 0 1 1 0  1  0 1 0 0 0
+           0 0  0 0 0 0 0  0  1 1 1 1 1   ~>[(1<<k)-1]
+          ______________________________
+           0 0  0 0 0 0 0  0  0 1 0 0 0   ~> Reminder
+
+----------------------------------------------------------
+
+
+
+
 
