@@ -40,3 +40,22 @@ int main()
     }
     cout<<(1<<x)<<endl;
 }
+
+//---------------------------------------------------------------------
+** if num=8/9/10/11/12/13/14/15 :->then return 8
+** To find the closest power of 2 that is smaller than or equal to a given number 𝑋
+   using bitwise operations, the goal is to identify the highest set bit 
+   in the binary representation of the number X **
+    
+int largestPowerOfTwo(int num) {
+    // Step 1: Propagate the highest bit
+    num |= num >> 1;
+    num |= num >> 2;
+    num |= num >> 4;
+    num |= num >> 8;
+    num |= num >> 16;  // Handle up to 32 bits
+    
+    // Step 2: Isolate the highest bit
+    return num - (num >> 1);
+}
+//----------------------------------------------------------------------
