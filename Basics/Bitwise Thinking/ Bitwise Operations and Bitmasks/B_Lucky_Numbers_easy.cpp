@@ -15,6 +15,10 @@ void Generate_super_lucky(){
     for(ll len=2; len<=10; len+=2){
         for(ll mask=0; mask<(1<<len); mask++){
             ll cnt4=0,cnt7=0,ck_val=0;
+       /* length er soman joto suplucky banano jai seita bainiye store korbo.
+              1010 -> 7474
+              0101 -> 4747
+       */
             for(ll i=0; i<len; i++){
                 if(mask&(1<<i)){
                     cnt7++;
