@@ -1,1 +1,20 @@
+-------------------------------------------
+ll swap_cal(ll n){
+    ll even_bits = (n & 0xAAAAAAAA ) >> 1;
+    ll odd_bits = (n & 0x555555555 ) << 1;
+    return (even_bits|odd_bits);
+}
+void solve(){
+    ll n; cin>>n;
+    cout<<swap_cal(n)<<' ';
+}
+---------------------------------------------
+Given an integer 𝑁, we want to ``swap `adjacent bits`` in its binary representation.
+That means:
 
+*Bit at `even` index swaps with the next odd index. (>>1)
+*Bit at `odd` index swaps with the previous even index. (<<1)
+
+For example:
+Binary of `(7)` = 000...0111
+Swapping adjacent bits: 000...0111 ⇒ 000...1011 = `(11)`
