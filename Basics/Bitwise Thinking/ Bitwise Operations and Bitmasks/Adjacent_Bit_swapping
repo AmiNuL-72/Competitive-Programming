@@ -18,3 +18,7 @@ That means:
 For example:
 Binary of `(7)` = 000...0111
 Swapping adjacent bits: 000...0111 ⇒ 000...1011 = `(11)`
+
+`` (0xAAAAAAAA)-> (..10101010) : only `even` position
+`` (0x55555555)-> (..01010101) : only `odd` position
+
