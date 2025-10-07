@@ -18,4 +18,4 @@
 | HackerRank   | [AmiNuL_cse8_bu](https://www.hackerrank.com/profile/AmiNuL_cse8_bu)                  | 15 |
 | HackerEarth  | [aminul.cse8.bu](https://www.hackerearth.com/@aminul.cse8.bu)                    | 1 |  
 | SPOJ         | [aminul72](https://new3.spoj.com/myaccount/)                                   | 2 |
-| ***Total***  |                                                                              | ***----*** |
+| ***Total***  |                                                                              | ***3,159*** |
